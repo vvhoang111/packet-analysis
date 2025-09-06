@@ -16,11 +16,13 @@ sss
 ```markdown
 # Portfolio
 ![Banner](https://via.placeholder.com/800x200.png?text=Welcome+to+My+Blog)
+```
 ## Dự án nổi bật
 - 🔎 [Malware Analysis Notes](https://github.com/username/malware-notes)
 - 🌐 [Network Security Lab](https://github.com/username/netsec-lab)
 
 ![GitHub followers](https://img.shields.io/github/followers/username?style=social)
+```
 ```
 # 📚 Blog cá nhân
 
