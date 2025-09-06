@@ -22,8 +22,7 @@ sss
 - 🌐 [Network Security Lab](https://github.com/username/netsec-lab)
 
 ![GitHub followers](https://img.shields.io/github/followers/username?style=social)
-```
-```
+
 # 📚 Blog cá nhân
 
 ## Nội dung
