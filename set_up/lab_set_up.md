@@ -11,6 +11,8 @@ Thì không có gì là khó cả, mọi thứ cài đặt mình sẽ không nó
 2. Ở đây ta có thể thêm `+` , xóa `-` ,sửa các cột để được như ý muốn, hoặc sắp xếp các cột theo thứ tự khác nhau 
     - Cột `Type` có thể sửa , và cột `Filed` cũng vậy 
     
+![](images/2025-09-07-16-01-13.png)
+
 3. Tiếp theo là `Web Filter`, bạn có thể lọc các gói tin theo tiêu chí mình mong muốn.
 
 ![pic2](./images/![alt%20text](image-1.png).png)
