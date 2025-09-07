@@ -11,13 +11,12 @@ Thì không có gì là khó cả, mọi thứ cài đặt mình sẽ không nó
 2. Ở đây ta có thể thêm `+` , xóa `-` ,sửa các cột để được như ý muốn, hoặc sắp xếp các cột theo thứ tự khác nhau 
     - Cột `Type` có thể sửa , và cột `Filed` cũng vậy 
     
-![alt text](image.png)
-
 3. Tiếp theo là `Web Filter`, bạn có thể lọc các gói tin theo tiêu chí mình mong muốn.
 
-![alt text](image-1.png)
+![pic2](./images/![alt%20text](image-1.png).png)
 
 [Link video gốc:https://youtu.be/xYzBFZDm6Ds](https://youtu.be/xYzBFZDm6Ds)
-![alt text](image-3.png)
+
+
 
 
