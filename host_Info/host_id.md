@@ -1,4 +1,8 @@
+
+[link gốc](https://www.youtube.com/watch?v=S-ny315TOyk&t=139s)
+
 #Part 03-01.pcap
+
 - 3 bytes đầu của địa chỉ MAC đại diện cho các Vendor id.
 
 ![](images/2025-09-07-16-35-56.png)
@@ -24,3 +28,36 @@
         1. Nhấn vào packet muốn chọn, chuột phải chọn `Follow` -> `TCP Stream`
 
 # Workshop part 03 - 02 .pcap
+# Workshop part 03 - 03.pacap
+# Workshop part 03 - 04.pacap
+# Workshop part 03 - 05.pacap
+# Workshop part 03 - 06.pacap
+...
+# Workshop part 03 - 09.pacap
+
+Các bài tiếp theo chỉ tập trung thực hành tìm các hệ điều hành OS của của máy gửi request lên, dùng filter và giả định đây là các request thật như đã nói ở trên
+Tìm thông qua 2 cách :
+     Ở gói tin DHCP request đầu tiên thì tìm vào host name ở dhcp , 1 số packet sẽ không có
+    Cách 2 là tìm ở gói tin sau khi filter `(http.request or tls.handshake.type eq 1) and !(ssdp)` rồi tìm theo TCP tream như đã nói ở trên
+Một số distro của linux sẽ không hiện thông tin OS và web browser ở dòng User-Agent.
+# Workshop part 03 - 10.pacap
+Ở đây tác giả tạo traffic 1 window user đăng nhập vào máy window server 2019.
+
+Ip user: `172.16.1.121`
+
+IP domain controller: `172.16.1.12`
+
+Dùng filter `kerberos.CNameString` để đọc được thông tin OS, window user account name. CName đại diện cho `Client name` ở đó ta tìm `Kerberos -> as-req -> req-body -> cname -> cname-string` sẽ thấy được trên máy client
+
+Sau khi thấy ta sẽ nhận chuột phải chọn `Apply as Column` để xem được các username khác nhau nếu có, dưới đây là hình:
+![](images/2025-09-07-21-26-19.png)
+
+Sau khi bấm vào ta sẽ được kết quả như hình, kéo xuống dưới ta sẽ thấy 1 username khác
+![](images/2025-09-07-21-27-16.png)
+
+1 Cách nữa là dùng filter `smb` để tìm host name,
+![](images/2025-09-07-21-34-25.png)
+
+Còn 1 cách nữa ,cách này thì tìm được tất cả các từ ở raw data.Dùng filter :, ví dụ `frame contains "test"`
+
+Đến đây là kết thúc.
